@@ -1,25 +1,18 @@
-@@,name
----,Shawn Edward
----,Sarah Flood-Beaubrun
----,Philip Pierre
----,Moses Jean Baptiste
----,Kenny Anthony
----,Herold Stanislas
----,Guy Joseph
----,Gale Rigobert
----,Dominic Fedee
----,Bradley Felix
----,Alva Baptiste
----,Allen Chastanet
-+++,Shawn Andrey Edward
-+++,Sarah Flood Beaubrun
-+++,Phillip J. Pierre
-+++,Moses Jn Baptiste
-+++,John Bradley Felix
-+++,Herold A. Stanislas
-+++,Guy Eardley Joseph
-+++,Dr. Kenny D. Anthony
-+++,Dr. Gale T C Rigobert
-+++,Dominic Francis Fedee
-+++,Alva R. Baptiste
-+++,Allen M. Chastanet
+@@,name,district
+->,Stephenson King,NULL->Castries North
+->,Shawn Andrey Edward,NULL->Dennery North
+->,Sarah Flood Beaubrun,NULL->Castries Central 
+->,Phillip J. Pierre,NULL->Castries East
+->,Moses Jn Baptiste,NULL->Vieux Fort North
+->,Lenard Montoute,NULL->Gros Islet
+->,John Bradley Felix,NULL->Choiseul
+->,Herold A. Stanislas,NULL->Soufriere
+->,Guy Eardley Joseph,NULL->Castries South East
+->,Ezechiel Joseph,NULL->Babonneau 
+->,Ernest Hilaire,NULL->Castries South
+->,Edmund Estephane,NULL->Dennery South
+->,Dr. Kenny D. Anthony,NULL->Vieux Fort South
+->,Dr. Gale T C Rigobert,NULL->Micoud North
+->,Dominic Francis Fedee,Babonneau->Anse La Raye/Canaries
+->,Alva R. Baptiste,NULL->Laborie
+->,Allen M. Chastanet,NULL->Micoud South 
