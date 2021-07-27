@@ -5,12 +5,14 @@ require 'every_politician_scraper/wikidata_query'
 
 query = <<SPARQL
   SELECT (STRAFTER(STR(?member), STR(wd:)) AS ?item)
-     ?name ?enLabel ?gender ?dob ?dobPrecision ?source
-     (STRAFTER(STR(?ps), '/statement/') AS ?psid)
+     ?name ?enLabel ?district ?gender ?dob ?dobPrecision
+     ?source (STRAFTER(STR(?ps), '/statement/') AS ?psid)
   WHERE {
     ?member p:P39 ?ps .
     ?ps ps:P39 wd:Q21296449 ; pq:P2937 wd:Q107486380 .
     FILTER NOT EXISTS { ?ps pq:P582 ?end }
+
+    OPTIONAL { ?ps pq:P768 ?constituency }
 
     OPTIONAL {
       ?ps prov:wasDerivedFrom ?ref .
@@ -28,7 +30,8 @@ query = <<SPARQL
 
     SERVICE wikibase:label {
       bd:serviceParam wikibase:language "en".
-      ?genderItem rdfs:label ?gender
+      ?genderItem rdfs:label ?gender .
+      ?constituency rdfs:label ?district .
     }
   }
   ORDER BY STR(?name)
